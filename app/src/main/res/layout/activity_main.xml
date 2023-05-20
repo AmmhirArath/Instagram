@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="#FFFFFF"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/atras"
+                android:layout_marginRight="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AmmhirArath"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            >
+            <ImageView
+                android:id="@+id/imgVideo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/video"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/imgVideo"
+                android:src="@drawable/editar"
+                android:layout_marginLeft="15dp"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="4dp">
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:iconifiedByDefault="false"
+            android:queryHint="Buscar" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15px"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imvP1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/p1"
+                android:layout_marginLeft="10dp"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imvP2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/p2"
+                android:layout_marginLeft="10dp"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imvP3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/p3"
+                android:layout_marginLeft="10dp"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imvP4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/p4"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tu nota"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:layout_marginLeft="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cristofer"
+                android:textStyle="bold"
+                android:textSize="15dp"
+
+                />
+            <TextView
+                android:layout_marginLeft="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ramiro"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:layout_marginLeft="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lucia"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="4dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mensajes"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Solicitudes"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lstChatsIg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
